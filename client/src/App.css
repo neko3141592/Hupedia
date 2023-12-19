@@ -11,11 +11,12 @@
 }
 
 .main {
-  margin: 0 auto;
+  margin: 40px auto;
   width: 90%;
 }
 
 .header-list {
+  margin: 15px 30px;
   list-style: none;
   display: flex;
 }
@@ -29,7 +30,19 @@
   white-space: nowrap;
   border-radius: 30px;
   box-shadow: 3px 1px 5px rgb(235, 238, 240);
-  padding: 0 0px 0 0;
+  padding: 0;
+}
+
+.head-search {
+  width: 40%;
+  height: 60px;
+  margin: 10px 0 0 20px;
+  border-radius: 30px;
+  box-shadow: 3px 1px 5px rgb(235, 238, 240);
+  border: none;
+  outline: none;
+  padding: 0 20px;
+  font-size: 20px;
 }
 
 .menu {
@@ -113,28 +126,16 @@
   white-space: normal;
 }
 
-.page-text h1 {font-size: 35px;}
-.page-text h2 {font-size: 32px;}
-.page-text h3 {font-size: 22px;}
-
-.page-text a {
-  color: black;
-  font-size: 23px;
-}
-
-.page a:hover {
-  color:aliceblue
-}
-
 .editor {
   font-size: 20px;
   height: 70vh;
   width: 100%;
-  background-color: aliceblue;
+  background-color: rgb(223, 235, 237);
   border: none;
   border-radius: 10px;
   resize: none;
   outline: none;
+  padding: 10px;
 }
 
 .ok {
@@ -144,4 +145,13 @@
   height: 50px;
   font-size: 20px;
   border-radius: 10px;
+}
+
+.edit .buttons {
+  display: flex;
+}
+
+.edit button {
+  margin: 0 10px 0 0;
+  padding: 10px;
 }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import Axios from "axios";
+import "../stylesheets/page.css"
 
 const  Page =  () => {
     const {id} = useParams();
@@ -27,6 +28,7 @@ const  Page =  () => {
                         <p>記事一覧{' > '}{data[0].title}</p>
                         <h1 className="page-title">
                             {data[0].title}
+                            <NavLink to='edit/' className={'edit-button'}>[編集]</NavLink>
                         </h1>
                     <hr></hr>
                         <div 
