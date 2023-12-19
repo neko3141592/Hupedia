@@ -1,0 +1,147 @@
+.head-title {
+  font-size: 30px; 
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  padding: 0;
+  margin: 5px 0 0 10px;
+}
+
+.small-text {
+  color: aliceblue;
+  font-size: 10px;
+}
+
+.main {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.header-list {
+  list-style: none;
+  display: flex;
+}
+
+.header-logo {
+  width: 60px;
+  font-size: 20px;
+  color: black;
+  margin: 10px 0 0 20px;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 30px;
+  box-shadow: 3px 1px 5px rgb(235, 238, 240);
+  padding: 0 0px 0 0;
+}
+
+.menu {
+  width: 15%;
+}
+
+.menu-item {
+  font-size: 17px;
+  color: black;
+  display: block;
+}
+
+.menu h1 {
+  width: 100%;
+  font-size: 15px;
+  padding: 10px 0 0 10px;
+}
+
+.title {
+  font-size: 40px; 
+  /* font-family: 'M PLUS Rounded 1c', sans-serif; */
+  font-family: serif;
+  /* font-family: 'Noto Sans JP', sans-serif; */
+  padding: 0;
+  margin: 30px 0 0 20px;
+}
+
+.sub-title {
+  font-size: 30px;
+  /* font-family: 'M PLUS Rounded 1c', sans-serif; */
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 0;
+  margin: 10px 0 0 20px;
+}
+
+.list-items {
+  display: block;
+  color: black;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 20px;
+  list-style: none;
+  padding: 1rem 0 3rem 1rem;
+  margin: 10px 0;
+  border: solid 2px rgb(216, 216, 216);
+  width: auto;
+  border-radius: 10px;
+  transition: 100ms;
+  text-decoration: none;
+}
+
+.list-items:hover {
+  background-color: beige;
+}
+
+.search {
+  display: flex;
+  justify-content: flex-end
+}
+
+.search input {
+  height: 30px;
+  width: 300px;
+  border: solid black 1px;
+}
+
+.search button {
+  height: 34px;
+  width: 50px;
+  border: solid black 1px;
+}
+
+.page-title{
+  font-size: 40px; 
+  padding: 10px;
+  margin: 30px 0 0 0;
+}
+
+.page-text {
+  font-size: 20px;
+  padding: 10px;
+  white-space: normal;
+}
+
+.page-text h1 {font-size: 35px;}
+.page-text h2 {font-size: 32px;}
+.page-text h3 {font-size: 22px;}
+
+.page-text a {
+  color: black;
+  font-size: 23px;
+}
+
+.page a:hover {
+  color:aliceblue
+}
+
+.editor {
+  font-size: 20px;
+  height: 70vh;
+  width: 100%;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  outline: none;
+}
+
+.ok {
+  background-color: rgb(115, 193, 254);
+  border: none;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+}
