@@ -1,8 +1,8 @@
 function Home () {
     return (
         <div className="home">
-            <h1 className="title">Hupedia</h1>
-            <h2 className="sub-title">たくさんの記事</h2>
+            <h1 className="title">Hupediaへようこそ！</h1>
+            <h2 className="sub-title">人間についての百科事典</h2>
         </div>
     );
 }

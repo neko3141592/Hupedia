@@ -6,12 +6,10 @@ import "../stylesheets/page.css"
 const  Page =  () => {
     const {id} = useParams();
     const [data , setData] = useState('');
-    console.log(0);
     useEffect (() => {
         Axios.get(`http://localhost:3001/api/get/page?name=${id}`)
         .then((res) => {
             setData(res.data);
-            console.log(res);
         })
     },[]);
     const renderText = (text) => {

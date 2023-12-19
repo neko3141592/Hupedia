@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom';
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams , useNavigate } from "react-router-dom";
 import Axios from "axios";
 import Editor from '@monaco-editor/react';
 import "../stylesheets/page.css"
@@ -11,6 +11,7 @@ const Edit =  () => {
     const [text , setText] = useState('');
     const [previewText , setPreviewText] = useState('');
     const [isPreview , setIsPreview] = useState(false);
+    const navigate = useNavigate();
     useEffect (() => {
         Axios.get(`http://localhost:3001/api/get/page?name=${id}`)
         .then((res) => {
@@ -19,7 +20,7 @@ const Edit =  () => {
             setPreviewText(res.data[0].html);
         })
         .catch(error => {
-            console.log("不明なエラーが発生しました");
+            console.error(error);
         });
     },[]);
     const onClickAddText = () => {
@@ -28,10 +29,11 @@ const Edit =  () => {
         console.log(newText);
         Axios.put(`http://127.0.0.1:3001/api/get/page/edit?name=${id}&text='${newText}'`)
         .catch((error) => {
-            console.log("不明なエラーが発生しました");
+            console.error(error);
         })
         .then((res) => {
-            console.log(res);
+            navigate(`/pages/${id}`);
+            window.location.reload();
         })
     }
     const onClickPreview = () => {
@@ -80,6 +82,5 @@ const Edit =  () => {
         </div>
     );
 }
-
 
 export default Edit;
