@@ -34,6 +34,25 @@ app.get("/api/get/page", (req, res) => {
     });
 });
 
+app.get("/api/get/search", (req, res) => {
+    const search = req.query.text;
+    if (!search) {
+        res.status(400).send('Bad Request: Missing "name" parameter');
+        return;
+    }
+
+    const sqlSelect = `SELECT title,id FROM pages WHERE title LIKE "%${search}%"`;
+
+    db.query(sqlSelect, (err, result) => {
+        if (err) {
+            console.error(err);
+            res.status(500).send('Internal Server Error');
+            return;
+        }
+        res.send(result);
+    });
+});
+
 app.put("/api/get/page/edit" , (req , res) => {
     const page = req.query.name;
     const text = req.query.text.replace(/\n/g, '');
