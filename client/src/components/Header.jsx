@@ -5,6 +5,8 @@ import HeadLogo from "../images/headLogo.png"
 import HomeLogo from "../images/home.png";
 import MenuLogo from "../images/menu.png";
 import AboutLogo from "../images/about.png";
+import NewLogo from "../images/edit.png"
+import New from "./New";
 
 const Header = () => {
     const [searchText , SetSearchText] = useState('');
@@ -30,6 +32,12 @@ const Header = () => {
                     className="header-list-item" 
                 >
                     <img src={AboutLogo} alt="About" className="header-logo"/>
+                </NavLink>
+                <NavLink 
+                    to={"/new"}
+                    className="header-list-item" 
+                >
+                    <img src={NewLogo} alt="About" className="header-logo"/>
                 </NavLink>
                 <input 
                     type='text' 

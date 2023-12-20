@@ -12,11 +12,16 @@
 
 .page-text a {
     color:cornflowerblue;
+    text-decoration: none;
     font-size: 23px;
     transition: 200ms;
 }
+.page a:hover,.page-text a:hover {color:cadetblue;}
 
-.page a:hover {color:cadetblue;}
+.page-text a::before{content: "[";}
+.page-text a::after{content: "]";}
+
+
 
 .page-text .color-re {color: red;}
 .page-text .color-bl {color: blue;}
@@ -26,11 +31,16 @@
 .page-text .color-pi {color: pink;}
 .page-text .color-gy {color: gray;}
 
-.page-text .wide {letter-spacing: 5px;}
+.page-text .wide {letter-spacing: 10px;}
 
 .page-text .s0 {font-size: 56px;}
 .page-text .s1 {font-size: 49px;}
 .page-text .s2 {font-size: 42px;}
 .page-text .s3 {font-size: 35px;}
-.page-text .s45 {font-size: 23px;}
 .page-text .s4 {font-size: 28px;}
+.page-text .s45 {font-size: 23px;}
+
+.strong {
+    background-color: black;
+    color: white;
+}

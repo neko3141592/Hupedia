@@ -6,6 +6,7 @@ import Page from './components/Page';
 import Header from './components/Header';
 import Edit from './components/Edit';
 import Search from './components/Search';
+import New from './components/New';
 
 const  Router =  () => {
     return (
@@ -18,6 +19,7 @@ const  Router =  () => {
                         <Route path='/pages/:id' element={<Page/>}></Route>
                         <Route path='/pages/:id/edit' element={<Edit/>}></Route>
                         <Route path='/search' element={<Search/>}></Route>
+                        <Route path='/new' element={<New/>}></Route>
                     </Routes>
                 </div>
             </BrowserRouter>
